@@ -36,8 +36,10 @@ class Gonka {
                 scanner.next();
             }
             cars1.spid = scanner.nextInt();
-            if (cars1.spid > 251) {
+            if (cars1.spid > 250) {
                 System.out.println("Это автомобиль, а не самолет, введи число поменьше: ");
+            } else if (cars1.spid < 0) {
+                System.out.println("Скорость это положительное число: ");
             } else {
                 break;
             }
@@ -49,8 +51,10 @@ class Gonka {
                 scanner.next();
             }
             cars2.spid = scanner.nextInt();
-            if (cars2.spid > 251) {
+            if (cars2.spid > 250) {
                 System.out.println("Скорость болида до 250 км.ч");
+            } else if (cars2.spid < 0) {
+                System.out.println("Скорость это положительное число: ");
             } else {
                 break;
             }
@@ -62,8 +66,10 @@ class Gonka {
                 scanner.next();
             }
             cars3.spid = scanner.nextInt();
-            if (cars3.spid > 251) {
+            if (cars3.spid > 250) {
                 System.out.println("Пошел на взлет...\nВведи число поменьше: ");
+            } else if (cars3.spid < 0) {
+                System.out.println("Скорость это положительное число: ");
             } else {
                 break;
             }
